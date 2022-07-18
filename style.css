@@ -1,0 +1,206 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+body{
+ width: 100%;
+ height: 100vh;
+ font-family: 'Overpass', sans-serif;
+ 
+}
+.container{
+ width: 100%;
+ height: 100%;
+ position: relative;
+ background-color: #141519;
+ color: #FFFFFF;
+}
+.rating-card-container, .thankyou-card-container {
+ background-color: #1B222C;
+ width: 329px;
+ height: 362px;
+ border-radius: 13px;
+ padding: 25px 23px 33px 23px;
+ font-size: 14px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 5;
+ 
+}
+
+.thankyou-card-container.hide, .rating-card-container.hide {
+ display: none;
+ visibility: hidden;
+ z-index: -1;
+}
+button {
+ border: none;
+ cursor: pointer;
+ outline: none;
+ color: #FFFFFF;
+}
+.icon-star {
+ width: 41px;
+ height: 41px;
+ border-radius: 50%;
+ background-color: #262F38 ;
+ position: relative;
+ margin-bottom: 18px;
+}
+
+.icon-star img {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 15px;
+ height: 15px;
+}
+
+h3 {
+ font-size: 24px;
+ font-weight: 400;
+ margin-bottom: 14px;
+}
+.feedback, .appreciation {
+ line-height: 22px;
+}
+.scores-container {
+ margin-top: 32px;
+ margin-bottom: 25px;
+ /* styling the button was stricky flexbox to the rescue */
+ width: 278px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.score {
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background-color: #262F38 ;
+ font-size: 14px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.score:hover, .score:focus  {
+ background-color: #7C8898;
+}
+
+.btn {
+ padding: 13px 110px;
+ background-color: #FB7711;
+ letter-spacing: 1.96px;
+ border-radius: 22px;
+ font-size: 14px;
+}
+.btn:hover, .btn:focus {
+ background-color: #FFFFFF ;
+ color: #FB7711;
+}
+.thankyou-container {
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.illustration-thank-you {
+ width: 143px;
+ height: 95px;
+ margin-bottom:24px;
+}
+.illustration-thank-you img {
+ width: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+}
+.score-result {
+ width: 169px;
+ height: 33px;
+ border-radius: 17px;
+ background-color: #262F38;
+ color: #FB7711;
+ line-height: 22px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 26px;
+}
+.thank-you {
+ margin-bottom: 14px;
+}
+.appreciation {
+ text-align: center;
+ width: 280px;
+}
+/* desktop */
+@media screen and (min-width: 1200px) {
+ .rating-card-container, .thankyou-card-container {
+ width: 409px;
+ height: 417px;
+ border-radius: 28px;
+ padding: 34px 36px 33px 29px;
+ font-size: 15px;
+}
+.icon-star {
+ width: 47px;
+ height: 47px;
+ margin-bottom: 31px;
+}
+
+.icon-star img {
+ width: 17px;
+ height: 17px;
+}
+
+h3 {
+ font-size: 29px;
+ margin-bottom: 12px;
+}
+.feedback, .appreciation {
+ line-height: 24px;
+}
+.scores-container {
+ margin-top: 31px;
+ margin-bottom: 32px;
+ /* styling the button was stricky flexbox to the rescue */
+ width: 342px;
+}
+
+.score {
+ width: 50px;
+ height: 50px;
+ font-size: 16px;
+}
+
+.btn {
+ padding: 13px 140px;
+ letter-spacing: 2.8px;
+}
+.illustration-thank-you {
+ width: 162px;
+ height: 108px;
+ margin-bottom:31.5px;
+}
+p{
+ font-size: 15px;
+}
+.score-result {
+ width: 190px;
+ height: 30px;
+ border-radius: 17px;
+ margin-bottom: 36px;
+}
+.thank-you {
+ margin-bottom: 11px;
+}
+.appreciation {
+ width: 341px;
+}
+}
